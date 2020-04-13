@@ -1,0 +1,230 @@
+html {
+		font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+h1.title{
+	margin-bottom: 20px;
+	text-align:center;
+}
+
+
+
+
+section.main{
+	.header {
+		display: block;
+		width: 100%;
+		height: 80px;
+		background-color: #fffff;
+		 .logo {
+		 	width: 183px;
+		 	img {
+		 		width: 100%;
+		 	}
+		 }
+		}
+	.main-img {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	.phone-form {
+		height: 100%;
+		background-color: #993333;
+		width: 100%;
+		left: 0px;
+		text-align: center;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 10px;
+		&__call {
+			font-style: italic;
+			margin-top: 10px;
+			a {
+				font-size: 24px;
+				color: #fff;
+				text-decoration: none;
+			}
+			a:hover {
+				color: #fff;
+				text-decoration: underline;
+			}
+		}
+		&__heading{
+			span {
+				font-size: 26px;
+				color: #fff;
+				line-height: 20px;
+				strong {
+					display: block;
+				}
+			}
+	 }
+		&__input {
+			font-size: 14px;
+			input{
+				width: 100%;
+				border-radius: 10px;
+				padding: 5px 10px;
+				margin-top: 10px;
+			}
+			button {
+				background-color: #fff;
+				border: none;
+				margin: 20px 0 10px 0;
+				width: 70%;
+				border-radius: 10px;
+				font-weight: bold;
+
+
+			}
+	 }
+ }
+}
+
+.servis {
+	text-align: center;
+	position: relative;
+	margin: 80px;
+	
+	&__content {
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+ 	width: 100%;
+ 	.circle-big {
+  	position: absolute;
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+  	z-index: 0;
+  	background-color: #ffffb5;
+  }
+  .circle-small {
+  	position: absolute;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: 50%;
+  	z-index: 1;
+  	background-color: #97dcdc;  	
+  }
+  &__img {
+			width: 160px;
+	 	height: 155px;
+	 	display: block;
+	 	margin-right: auto;
+	 	margin-left: auto;
+	 	color: #4e4b4b;
+	 	z-index: 2;
+	 	img {
+	 		position: relative;
+	 		width: 100%;
+	  }		  	
+	 }	
+	 span {
+ 		margin-top: 50px;
+			font-size: 30px;
+			font-weight: 700;
+ 		display: block;
+		}
+	}
+}
+
+.calc {
+	h1{}
+	.panel {
+		&-group {}
+		&-default {}
+		&-heading {
+			background-color: #993333;
+			span 	{}
+		}
+		&-collapse {
+			background-color: #fdf5d1;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			// &__choice {
+			// 	display: flex;	
+			//     justify-content: space-between;
+			//     align-items: center;
+			// }
+			.img {
+				margin: 20px;
+				width: 50px;
+				height: 50px;
+				img {
+					width: 100%;
+				}
+			}
+			input.check-switch{
+    			display: none;
+}
+.check-switch:checked+.switch-label .switch-switch{
+    transform: translate(19px, 0px);
+}
+.check-switch:checked+.switch-label .switch-inner{
+    margin-left: 0;
+}
+.onoffswitch{
+    width: 100px;
+    height: 30px;
+    background-color: #9AAEF6;
+    border-radius: 15px;
+    overflow: hidden;
+    label.switch-label{
+    
+        span.switch-inner{
+            cursor: pointer;
+            display: block;
+           height: 100%;
+            width: 200%;
+            margin-left: -100%;
+            transition: all 0.3s ease-in 0s;
+        }
+        span.switch-inner::before, span.switch-inner::after{
+            font-size: 23px;
+            float: left;
+            width: 50%;
+        }
+        span.switch-inner::before{
+            content: 'Лето';
+            padding-left: 10px;
+            
+        }
+        span.switch-inner::after{
+            content: 'Зима';
+            padding-left: 30px;
+        }
+        span.switch-switch{
+            position: relative;
+            display: block;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #305BF6;
+            left: 50%;
+            top: 50%;
+            z-index: 15;
+            transform: translate(-50px, 0px);     
+            transition: all 0.3s ease-in 0s;       
+        }
+    }
+}
+  }
+ }
+}
+
+
+
+
