@@ -16,7 +16,7 @@
 	 </div>
   <div class="container">
 			<div class="row">
-			 <div class="col-md-8">
+			 <div class="col-md-8 col-sm-12">
 			  <div class="main-img">
 			  	<img src="images/main/main.png" alt="">
 			  </div>
@@ -88,7 +88,7 @@
 			 	<div class="panel-group" id="accordion">
 			 		<div class="panel panel-default panel-one	">
 			 			<div class="panel-heading" role="tab" id="headingOne">
-			 				<span>Сезон</span>
+			 				<span class="head-span">Сезон</span>
 			 			</div>
 			 			<div class="panel-collapse collapse-one">
 			 				<div class="img">
@@ -109,25 +109,31 @@
 
 			 		<div class="panel panel-default panel-two	">
 			 			<div class="panel-heading" role="tab" id="headingTwo">
-			 				<span>Расстояние (км)</span>
+			 				<span class="head-span">Расстояние (км)</span>
 			 			</div>
 			 			<div class="panel-collapse">
-			 				<input type="text">
+			 				<input class="distance" type="text">
 			 			</div>
 			 		</div>
 
 			 		<div class="panel panel-default panel-three	">
 			 			<div class="panel-heading" role="tab" id="headingThree">
-			 				<span>Ожидание</span>
+			 				<span class="head-span">Ожидание</span>
 			 			</div>
 			 			<div class="panel-collapse">
 			 				<div class="choice">
 			 					<span>Нет</span>
-			 					<input type="checkbox">
-			 					<span>Да</span>
+			 					<div class="onoffswitch">
+            <input type="checkbox" name="" id="switch-season" class="check-switch">
+            <label for="switch-season" class="switch-label">
+                <span class="switch-inner"></span>
+                <span class="switch-switch"></span>
+            </label>
+        </div>
+			 					<span>Да</span> 
 			 				</div>
 			 				<div class="time">
-			 					<span>Время ожидания</span>
+			 					<span>Время ожидания (ч)</span>
 			 					<input type="text">
 			 				</div>
 			 			</div>
@@ -135,12 +141,12 @@
 
 			 		<div class="panel panel-default panel-four	">
 			 			<div class="panel-heading" role="tab" id="headingFour">
-			 				<span>Колличество человек</span>
+			 				<span class="head-span">Колличество человек</span>
 			 			</div>
 			 			<div class="panel-collapse">
 			 				<input type="text">
+			 				<span>Детские кресла</span>
 			 				<div class="choice">
-			 					<span>Детские кресла</span>
 			 				 <span>Нет</span>
 			 				 <input type="checkbox">
 			 				 <span>Да</span>

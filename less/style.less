@@ -144,20 +144,39 @@ section.main{
 		&-group {}
 		&-default {}
 		&-heading {
+			padding: 14px ;
 			background-color: #993333;
-			span 	{}
+			font-weight: 550;
+			border-radius: 10px;
+			.head-span 	{
+				color: white;
+			}
 		}
 		&-collapse {
 			background-color: #fdf5d1;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			border-radius: 10px;
+			input {
+			background-color: #ffcccc;
+			border-radius: 10px;	
 
-			// &__choice {
-			// 	display: flex;	
-			//     justify-content: space-between;
-			//     align-items: center;
-			// }
+			}
+			// Инпут расстояние //
+			.distance {
+				margin: 10px 0 10px 30%;
+			}
+
+			.choice {
+				justify-content: center;
+				span {
+					font-weight: 900;
+					font-size: 20px;
+				}
+			}
+
+			
 			.img {
 				margin: 20px;
 				width: 50px;
