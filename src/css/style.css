@@ -66,23 +66,6 @@ section.main .phone-form__heading span {
 section.main .phone-form__heading span strong {
   display: block;
 }
-section.main .phone-form__input {
-  font-size: 14px;
-}
-section.main .phone-form__input input {
-  width: 100%;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin-top: 10px;
-}
-section.main .phone-form__input button {
-  background-color: #fff;
-  border: none;
-  margin: 20px 0 10px 0;
-  width: 70%;
-  border-radius: 10px;
-  font-weight: bold;
-}
 .servis {
   text-align: center;
   position: relative;
@@ -142,7 +125,13 @@ section.main .phone-form__input button {
   display: block;
 }
 .calc .panel-heading {
+  padding: 14px ;
   background-color: #993333;
+  font-weight: 550;
+  border-radius: 10px;
+}
+.calc .panel-heading .head-span {
+  color: white;
 }
 .calc .panel-collapse {
   background-color: #fdf5d1;
@@ -155,6 +144,23 @@ section.main .phone-form__input button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-radius: 10px;
+}
+.calc .panel-collapse input {
+  background-color: #ffcccc;
+  border-radius: 10px;
+}
+.calc .panel-collapse .distance {
+  margin: 10px 0 10px 30%;
+}
+.calc .panel-collapse .choice {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.calc .panel-collapse .choice span {
+  font-weight: 900;
+  font-size: 20px;
 }
 .calc .panel-collapse .img {
   margin: 20px;
@@ -177,7 +183,7 @@ section.main .phone-form__input button {
 .calc .panel-collapse .onoffswitch {
   width: 100px;
   height: 30px;
-  background-color: #9AAEF6;
+  background-color: #ffcccc;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -211,7 +217,7 @@ section.main .phone-form__input button {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #305BF6;
+  background-color: #ff6666;
   left: 50%;
   top: 50%;
   z-index: 15;
