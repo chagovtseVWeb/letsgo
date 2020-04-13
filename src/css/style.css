@@ -133,6 +133,15 @@ section.main .phone-form__heading span strong {
 .calc .panel-heading .head-span {
   color: white;
 }
+.calc .panel-wait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .calc .panel-collapse {
   background-color: #fdf5d1;
   display: -webkit-box;
@@ -141,9 +150,9 @@ section.main .phone-form__heading span strong {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 10px;
 }
 .calc .panel-collapse input {
@@ -151,12 +160,17 @@ section.main .phone-form__heading span strong {
   border-radius: 10px;
 }
 .calc .panel-collapse .distance {
-  margin: 10px 0 10px 30%;
+  display: block;
+  margin: 10px 0 10px 0;
 }
 .calc .panel-collapse .choice {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 20px 0 20px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .calc .panel-collapse .choice span {
   font-weight: 900;
@@ -174,8 +188,9 @@ section.main .phone-form__heading span strong {
   display: none;
 }
 .calc .panel-collapse .check-switch:checked + .switch-label .switch-switch {
-  -webkit-transform: translate(19px, 0px);
-          transform: translate(19px, 0px);
+  right: 0;
+  -webkit-transform: translate(70px, 0px);
+          transform: translate(70px, 0px);
 }
 .calc .panel-collapse .check-switch:checked + .switch-label .switch-inner {
   margin-left: 0;
@@ -192,23 +207,8 @@ section.main .phone-form__heading span strong {
   display: block;
   height: 100%;
   width: 200%;
-  margin-left: -100%;
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
-}
-.calc .panel-collapse .onoffswitch label.switch-label span.switch-inner::before,
-.calc .panel-collapse .onoffswitch label.switch-label span.switch-inner::after {
-  font-size: 23px;
-  float: left;
-  width: 50%;
-}
-.calc .panel-collapse .onoffswitch label.switch-label span.switch-inner::before {
-  content: 'Лето';
-  padding-left: 10px;
-}
-.calc .panel-collapse .onoffswitch label.switch-label span.switch-inner::after {
-  content: 'Зима';
-  padding-left: 30px;
 }
 .calc .panel-collapse .onoffswitch label.switch-label span.switch-switch {
   position: relative;
@@ -218,11 +218,10 @@ section.main .phone-form__heading span strong {
   height: 30px;
   border-radius: 50%;
   background-color: #ff6666;
-  left: 50%;
-  top: 50%;
+  left: 0;
   z-index: 15;
-  -webkit-transform: translate(-50px, 0px);
-          transform: translate(-50px, 0px);
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
   -webkit-transition: all 0.3s ease-in 0s;
   transition: all 0.3s ease-in 0s;
 }

@@ -152,11 +152,16 @@ section.main{
 				color: white;
 			}
 		}
+		&-wait{
+			display: flex;
+			flex-direction: column;
+
+		}
 		&-collapse {
 			background-color: #fdf5d1;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: center;
 			border-radius: 10px;
 			input {
 			background-color: #ffcccc;
@@ -165,11 +170,15 @@ section.main{
 			}
 			// Инпут расстояние //
 			.distance {
-				margin: 10px 0 10px 30%;
+				display: block;
+				margin: 10px 0 10px 0;
 			}
 
 			.choice {
-				justify-content: center;
+				margin: 20px 0 20px 0;
+				width: 100%;
+				display: flex;
+				justify-content: space-around;				
 				span {
 					font-weight: 900;
 					font-size: 20px;
@@ -187,9 +196,10 @@ section.main{
 			}
 			input.check-switch{
     			display: none;
-}
+			}			
 .check-switch:checked+.switch-label .switch-switch{
-    transform: translate(19px, 0px);
+	right: 0;
+	transform: translate(70px, 0px); 
 }
 .check-switch:checked+.switch-label .switch-inner{
     margin-left: 0;
@@ -205,25 +215,25 @@ section.main{
         span.switch-inner{
             cursor: pointer;
             display: block;
-           height: 100%;
+            height: 100%;
             width: 200%;
-            margin-left: -100%;
-            transition: all 0.3s ease-in 0s;
+            //margin-left: 100px;
+			transition: all 0.3s ease-in 0s;
         }
-        span.switch-inner::before, span.switch-inner::after{
-            font-size: 23px;
-            float: left;
-            width: 50%;
-        }
-        span.switch-inner::before{
-            content: 'Лето';
-            padding-left: 10px;
+        // span.switch-inner::before, span.switch-inner::after{
+        //     font-size: 23px;
+        //     float: left;
+        //     width: 50%;
+        // }
+        // span.switch-inner::before{
+        //     content: 'Лето';
+        //     padding-left: 10px;
             
-        }
-        span.switch-inner::after{
-            content: 'Зима';
-            padding-left: 30px;
-        }
+        // }
+        // span.switch-inner::after{
+        //     content: 'Зима';
+        //     padding-left: 30px;
+        // }
         span.switch-switch{
             position: relative;
             display: block;
@@ -232,10 +242,9 @@ section.main{
             height: 30px;
             border-radius: 50%;
             background-color: #ff6666;
-            left: 50%;
-            top: 50%;
+            left: 0;
             z-index: 15;
-            transform: translate(-50px, 0px);     
+            transform: translate(0px, 0px);     
             transition: all 0.3s ease-in 0s;       
         }
     }
