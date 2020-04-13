@@ -1,24 +1,43 @@
 html {
   font-family: sans-serif;
 }
-body {
-  margin: 0;
-}
 h1.title {
   margin-bottom: 20px;
   text-align: center;
 }
+section.main {
+  margin: 0;
+}
 section.main .header {
+  position: fixed;
   display: block;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 80px;
-  background-color: #fffff;
+  background-color: #FFCDC1;
+  z-index: 10;
 }
 section.main .header .logo {
-  width: 183px;
+  padding: 10px 20px 20px 20px;
+  margin: 5px 0px 5px 20px;
+  width: 150px;
+  background-color: #CB6B6A;
+  border-radius: 50%;
 }
 section.main .header .logo img {
   width: 100%;
+}
+section.main .main-body {
+  padding-top: 100px;
+}
+section.main .main-body .wrap-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.main .main-img {
   width: 100%;
@@ -27,12 +46,48 @@ section.main .main-img img {
   width: 100%;
 }
 section.main .phone-form {
-  height: 100%;
-  background-color: #993333;
-  width: 100%;
-  left: 0px;
-  text-align: center;
+  position: absolute;
+  background-image: url('../images/main/phoneForm.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  right: 0px;
+  top: 0px;
+  z-index: 11;
+}
+section.main .phone-form__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: italic;
   padding: 10px;
+}
+section.main .phone-form__call a {
+  line-height: 1;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+section.main .phone-form__call a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+section.main .phone-form__heading {
+  padding: 40px 40px 10px 40px;
+}
+section.main .phone-form__heading span {
+  font-size: 26px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+}
+section.main .phone-form__heading span strong {
+  margin-top: 10px;
+  display: block;
+}
+section.main .phone-form__input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,28 +98,23 @@ section.main .phone-form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0 20px 40px 100px;
 }
-section.main .phone-form__call {
-  font-style: italic;
-  margin-top: 10px;
-}
-section.main .phone-form__call a {
-  font-size: 24px;
-  color: #fff;
-  text-decoration: none;
-}
-section.main .phone-form__call a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-section.main .phone-form__heading span {
-  font-size: 26px;
-  color: #fff;
-  line-height: 20px;
-}
-section.main .phone-form__heading span strong {
+section.main .phone-form__input input {
   display: block;
+  margin-top: 15px;
+  font-size: 12px;
+}
+section.main .phone-form__input button {
+  background-color: #fff;
+  border: none;
+  margin: 40px 0 10px 0;
+  width: 70%;
+  border-radius: 10px;
 }
 .servis {
   text-align: center;
