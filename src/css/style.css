@@ -1,5 +1,31 @@
-html {
-  font-family: sans-serif;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-LightItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBoldItalic.ttf');
+  font-weight: bold;
+  font-style: italic;
+}
+body {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
 }
 h1.title {
   margin-bottom: 20px;
@@ -177,7 +203,6 @@ section.main .phone-form__input button {
 .calc .panel-heading {
   padding: 14px ;
   background-color: #993333;
-  font-weight: 550;
   border-radius: 10px;
 }
 .calc .panel-heading .head-span {
